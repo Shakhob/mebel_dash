@@ -1,0 +1,31 @@
+.Link:active,
+.Link:hover,
+.Link:focus,
+.Link:hover,
+.Link:visited,
+.Link:link,
+.Link {
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: 500;
+  color: black;
+}
+
+.active .linkBox::before {
+  content: "";
+  position: absolute;
+  left: 5%;
+  width: 90%;
+  height: 100%;
+  background-color: #e25b9b;
+  border-radius: 5px;
+  z-index: -1;
+}
+
+.active .linkIcon {
+  color: white;
+}
+
+.active {
+  color: #fff !important;
+}
